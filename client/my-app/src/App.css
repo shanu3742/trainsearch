@@ -1,0 +1,214 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  min-height: 20vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.header > .button-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+}
+.search-container {
+  margin-top: 20px;
+  width: 80%;
+  min-height: 10vh;
+  border: 1px solid rgb(228, 228, 228);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.train {
+  min-width: 440px;
+  height: 220px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(218, 217, 217);
+  padding: 2px;
+  position: relative;
+}
+.tain-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.train > :first-child {
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+.train > :first-child > div {
+  padding-right: 5px;
+}
+.train-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(213, 210, 210);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.train-name {
+  display: flex;
+  align-items: center;
+}
+.train-icon + div {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.train-name + div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.train-name + div > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.train-name + div > div {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+}
+.train-name + div > div > b {
+  font-size: 25px;
+  color: gray;
+  padding-right: 5px;
+}
+.train-button__container {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-by-source {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+.train-sort-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.train-sort-container > div {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.train-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.train-option > p {
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.drawer-container {
+  min-width: 400px;
+}
+.post-button {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+
+.post-button > button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 201, 201);
+  color: red;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.post-button > button:hover {
+  background-color: rgb(241, 165, 165);
+  color: white;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 777px) {
+  .header {
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  .search-container {
+    margin-top: 20px;
+    width: 80%;
+    min-height: 25vh;
+    border: 1px solid rgb(228, 228, 228);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .search-by-source {
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+  }
+  .train {
+    min-width: 280px;
+    height: 220px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(218, 217, 217);
+    padding: 2px;
+    position: relative;
+  }
+  .train-route-name {
+    display: flex;
+    flex-direction: column;
+  }
+}

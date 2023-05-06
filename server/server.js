@@ -5,8 +5,10 @@ const DB_CONFIG = require("./config/db.config");
 const bodyParser = require("body-parser");
 const trainsSearchModel = require("./model/trains.search.model");
 const trainDetailsModel = require("./model/train.details.model");
+var cors = require("cors");
 
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
